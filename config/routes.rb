@@ -1,7 +1,7 @@
 DemoApp2::Application.routes.draw do
 
   resources :users
-  #match '/signup',  :to => 'users#new'
+  match '/signup',  :to => 'users#new'
 
   match 'pages/:action', :controller => 'pages'
 
